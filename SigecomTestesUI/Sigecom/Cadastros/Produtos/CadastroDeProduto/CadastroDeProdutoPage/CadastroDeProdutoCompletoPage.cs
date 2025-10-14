@@ -30,14 +30,15 @@ namespace SigecomTestesUI.Sigecom.Cadastros.Produtos.CadastroDeProduto.CadastroD
                 _driverService.DigitarNoCampoId(CadastroDeProdutoModel.ElementoEstoque, CadastroDeProdutoCompletoModel.Estoque);
                 _driverService.DigitarNoCampoId(CadastroDeProdutoModel.ElementoEstoqueMinimo, CadastroDeProdutoCompletoModel.EstoqueMinimo);
                 _driverService.DigitarNoCampoId(CadastroDeProdutoModel.ElementoEstoqueMaximo, CadastroDeProdutoCompletoModel.EstoqueMaximo);
-                
+
                 _driverService.DigitarNoCampoId(CadastroDeProdutoModel.ElementoCusto, CadastroDeProdutoBaseModel.CustoDoProduto);
                 _driverService.DigitarNoCampoId(CadastroDeProdutoModel.ElementoMarkup, CadastroDeProdutoBaseModel.MarkupDoProduto);
                 _driverService.DigitarNoCampoId(CadastroDeProdutoModel.ElementoReferencia, CadastroDeProdutoBaseModel.ReferenciaDoProduto);
 
                 _driverService.DigitarNoCampoComTeclaDeAtalhoId(CadastroDeProdutoModel.ElementoMarca, CadastroDeProdutoCompletoModel.Marca, Keys.Enter);
                 _driverService.TrocarJanela();
-                _driverService.RealizarAcaoDaTeclaDeAtalhoNaTelaName("Pesquisa de Marca", Keys.Enter);
+                _driverService.DigitarNoCampoComTeclaDeAtalhoIdMaisF5("textEditPesquisa", CadastroDeProdutoCompletoModel.Marca, Keys.Enter);
+                _driverService.TrocarJanela();
                 _driverService.DigitarNoCampoComTeclaDeAtalhoId(CadastroDeProdutoModel.ElementoFornecedor, CadastroDeProdutoCompletoModel.Fornecedor, Keys.Enter);
                 _driverService.DigitarNoCampoId(CadastroDeProdutoModel.ElementoLocal, CadastroDeProdutoCompletoModel.Local);
                 _driverService.DigitarNoCampoId(CadastroDeProdutoModel.ElementoObs, CadastroDeProdutoCompletoModel.Obs);

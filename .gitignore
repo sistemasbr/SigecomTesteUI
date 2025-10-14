@@ -87,4 +87,3 @@ nunit-*.xml
 *.nuget.targets
 /SigecomTestesUI/Allure/Resultados
 /SigecomTestesUI/Allure/Relatorios
-/SigecomTestesUI/Config/DriverFabrica.cs

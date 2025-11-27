@@ -46,7 +46,9 @@ namespace SigecomTestesUI.Sigecom.Compra.Xml.Page
             ClicarBotaoName(CompraXmlModel.ElementoDoAvancarCompra);
             ClicarBotaoName(CompraXmlModel.ElementoDoAvancarCompra);
             Assert.AreEqual(DriverService.ObterValorElementoId(CompraXmlModel.ElementoDoTotalDuplicatas), "R$150,00");
-            Assert.AreEqual(DriverService.PegarValorDaColunaDaGridNaPosicao(CompraXmlModel.TituloGridValorDuplicata, "0"), "150,00");
+            DriverService.DigitarNoCampoId(CompraXmlModel.CampoQuantidadeParcelasDuplicata, "2");
+            Assert.AreEqual(DriverService.PegarValorDaColunaDaGridNaPosicao(CompraXmlModel.TituloGridValorDuplicata, "0"), "75,00");
+            Assert.AreEqual(DriverService.PegarValorDaColunaDaGridNaPosicao(CompraXmlModel.TituloGridValorDuplicata, "1"), "75,00");
             ClicarBotaoName(CompraXmlModel.ElementoDoAvancarCompra);
             ClicarBotaoName(CompraXmlModel.ElementoDoAvancarCompra);
             ClicarBotaoName(CompraXmlModel.ElementoDoAvancarCompra);

@@ -28,11 +28,15 @@ namespace SigecomTestesUI.Sigecom.Compra.Xml.Page
             // Act
             DriverService.EditarItensNaGridComDuploClickNaPosicaoDesejada(CompraXmlModel.CampoDaGridDeItens, "", "0");
             DriverService.ClicarBotaoId(CompraXmlModel.ElementoDeAssociarProdutoDoXml);
+            DriverService.TrocarJanela();
             DriverService.DigitarNoCampoComTeclaDeAtalhoId(CompraXmlModel.ElementoPesquisaDeProduto, "11", Keys.Enter);
+            DriverService.TrocarJanela();
             ClicarBotaoName(CompraXmlModel.ElementoNameDoConfirmar);
             DriverService.EditarItensNaGridComDuploClickNaPosicaoDesejada(CompraXmlModel.CampoDaGridDeItens, "", "1");
             DriverService.ClicarBotaoId(CompraXmlModel.ElementoDeAssociarProdutoDoXml);
+            DriverService.TrocarJanela();
             DriverService.DigitarNoCampoComTeclaDeAtalhoId(CompraXmlModel.ElementoPesquisaDeProduto, "11", Keys.Enter);
+            DriverService.TrocarJanela();
             ClicarBotaoName(CompraXmlModel.ElementoNameDoConfirmar);
 
             // Assert
@@ -42,9 +46,11 @@ namespace SigecomTestesUI.Sigecom.Compra.Xml.Page
             ClicarBotaoName(CompraXmlModel.ElementoDoAvancarCompra);
             ClicarBotaoName(CompraXmlModel.ElementoDoAvancarCompra);
             Assert.AreEqual(DriverService.ObterValorElementoId(CompraXmlModel.ElementoDoTotalDuplicatas), "R$150,00");
-            Assert.AreEqual(DriverService.PegarValorDaColunaDaGrid(CompraXmlModel.CampoDaGridDeValorDuplicatas), "150,00");
+            Assert.AreEqual(DriverService.PegarValorDaColunaDaGridNaPosicao(CompraXmlModel.TituloGridValorDuplicata, "0"), "150,00");
             ClicarBotaoName(CompraXmlModel.ElementoDoAvancarCompra);
             ClicarBotaoName(CompraXmlModel.ElementoDoAvancarCompra);
+            ClicarBotaoName(CompraXmlModel.ElementoDoAvancarCompra);
+            EsperarAcaoEmSegundos(1);
             FecharTelaDeCompraXmlComEsc();
         }
 

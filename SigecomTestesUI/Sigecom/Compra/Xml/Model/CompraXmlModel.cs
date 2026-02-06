@@ -14,7 +14,7 @@
         public static string TituloGridValorDuplicata => "Valor";
         public static string TituloGridVencimentoDuplicata => "Vencimento";
         public static string CampoQuantidadeParcelasDuplicata => "txtQuantidadeParcelas";
-        public static string ElementoPesquisaDeProduto => "txtPesquisar";
+        public static string ElementoPesquisaDeProduto => "pesquisarTextEdit";
         public static string ElementoDeAssociarProdutoDoXml => "linkBuscarProdutoCadastrado";
         public static string CampoDaGridDeItens => "Item";
         public static string ElementoNameDoConfirmar => ", Confirmar (ENTER)";

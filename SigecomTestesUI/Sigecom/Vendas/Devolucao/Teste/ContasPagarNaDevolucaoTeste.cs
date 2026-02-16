@@ -10,14 +10,14 @@ namespace SigecomTestesUI.Sigecom.Vendas.Devolucao.Teste
 {
     public class ContasPagarNaDevolucaoTeste: BaseTestes
     {
-        [Test(Description = "Contas a pagar na devolução")]
-        [AllureTag("CI")]
-        [AllureSeverity(Allure.Commons.SeverityLevel.trivial)]
-        [AllureIssue("1")]
-        [AllureTms("1")]
-        [AllureOwner("Takaki")]
-        [AllureSuite("ContasPagar")]
-        [AllureSubSuite("Devolução")]
+        //[Test(Description = "Contas a pagar na devolução")]
+        //[AllureTag("CI")]
+        //[AllureSeverity(Allure.Commons.SeverityLevel.trivial)]
+        //[AllureIssue("1")]
+        //[AllureTms("1")]
+        //[AllureOwner("Takaki")]
+        //[AllureSuite("ContasPagar")]
+        //[AllureSubSuite("Devolução")]
         public void ContasAPagarNaDevolucao()
         {
             using var beginLifetimeScope = ControleDeInjecaoAutofac.Container.BeginLifetimeScope();

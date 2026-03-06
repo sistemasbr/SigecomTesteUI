@@ -53,6 +53,7 @@ namespace SigecomTestesUI.Sigecom.Cadastros.Produtos.CadastroDeProduto.CadastroD
             var verificarNcm = DriverService.ObterValorElementoId(CadastroDeProdutoModel.ElementoNcm)
                 .Equals("00000000");
             Assert.True(verificarNcm);
+            DriverService.DigitarNoCampoId(CadastroDeProdutoModel.ElementoCodigoNBS, CadastroDeProdutoServicoModel.CodigoNBS);
         }
 
         public void GravarAoEditarEFecharATela()

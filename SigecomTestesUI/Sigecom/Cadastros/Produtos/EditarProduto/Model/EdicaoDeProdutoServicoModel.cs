@@ -10,6 +10,7 @@
         public static string IbptMunicipal => "30,00";
         public static string AliquotaIcms => "15,00";
         public static string ListaServicos => "18.01";
+        public static string CodigoNBS => "1.2001.20.00";
 
         public static string NomeFinalDoProduto => "PRODUTO SERVICO EDITAR TESTE ALTERADO";
     }

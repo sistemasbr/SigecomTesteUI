@@ -45,6 +45,7 @@
         public static string ElementoCstpis => "cbxCSTPis";
         public static string ElementoCstCofins => "cbxCSTCofins";
         public static string ElementoClassificacaoPisCofins => "cbxClassificacaoPisCofins";
+        public static string ElementoCodigoNBS => "nbsButtonEdit";
 
         //Aba Grade
         public static string AbaGrade => "Grade";

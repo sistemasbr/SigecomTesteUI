@@ -63,6 +63,7 @@ namespace SigecomTestesUI.Sigecom.Cadastros.Produtos.EditarProduto.Page
             _driverService.SelecionarItemComboBox(CadastroDeProdutoModel.ElementoExigibilidadeIss, 1);
             _driverService.SelecionarItemComboBox(CadastroDeProdutoModel.ElementoIndicadorIncentivo, 1);
             _driverService.DigitarNoCampoId(CadastroDeProdutoModel.ElementoListaServicos, EdicaoDeProdutoServicoModel.ListaServicos);
+            _driverService.DigitarNoCampoId(CadastroDeProdutoModel.ElementoCodigoNBS, EdicaoDeProdutoServicoModel.CodigoNBS);
         }
 
         public void VerificarCamposDaAbaEditado()
@@ -72,6 +73,7 @@ namespace SigecomTestesUI.Sigecom.Cadastros.Produtos.EditarProduto.Page
             Assert.AreEqual(_driverService.ObterValorElementoId(CadastroDeProdutoModel.ElementoIbptImportado), EdicaoDeProdutoServicoModel.IbptImportado);
             Assert.AreEqual(_driverService.ObterValorElementoId(CadastroDeProdutoModel.ElementoIbptMunicipal), EdicaoDeProdutoServicoModel.IbptMunicipal);
             Assert.AreEqual(_driverService.ObterValorElementoId(CadastroDeProdutoModel.ElementoAliquotaIcms), EdicaoDeProdutoServicoModel.AliquotaIcms);
+            Assert.AreEqual(_driverService.ObterValorElementoId(CadastroDeProdutoModel.ElementoCodigoNBS), EdicaoDeProdutoServicoModel.CodigoNBS);
         }
 
         public void FluxoDePesquisaDoProdutoEditado(EdicaoDeProdutoBasePage edicaoDeProdutoBasePage,

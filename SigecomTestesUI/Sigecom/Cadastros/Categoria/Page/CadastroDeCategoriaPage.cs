@@ -49,11 +49,12 @@ namespace SigecomTestesUI.Sigecom.Cadastros.Categoria.Page
             }
         }
 
-        public bool PreencherCamposDaCategoriaGrade()
+        public bool PreencherCamposDaCategoriaGrade(string toggleDeGrade)
         {
             try
             {
                 PreencherCamposBaseDaCategoria();
+                DriverService.ClicarNoToggleSwitchPeloId(toggleDeGrade);
                 DriverService.SelecionarDoisItensDaGrid(CadastroDeCategoriaModel.ElementoGrid, 1);
                 DriverService.SelecionarDoisItensDaGrid(CadastroDeCategoriaModel.ElementoGrid, 2);
                 return true;

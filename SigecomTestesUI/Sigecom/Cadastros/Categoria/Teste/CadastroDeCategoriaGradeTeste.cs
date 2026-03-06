@@ -1,11 +1,12 @@
-﻿using System;
+﻿using Autofac;
 using NUnit.Allure.Attributes;
 using NUnit.Framework;
-using System.Collections.Generic;
-using Autofac;
 using SigecomTestesUI.ControleDeInjecao;
 using SigecomTestesUI.Services;
+using SigecomTestesUI.Sigecom.Cadastros.Categoria.Model;
 using SigecomTestesUI.Sigecom.Cadastros.Categoria.Page;
+using System;
+using System.Collections.Generic;
 
 namespace SigecomTestesUI.Sigecom.Cadastros.Categoria.Teste
 {
@@ -34,7 +35,7 @@ namespace SigecomTestesUI.Sigecom.Cadastros.Categoria.Teste
             cadastroDeCategoriaPage.AbrirTelaDeCategoriaParaTeste();
 
             // Act
-            cadastroDeCategoriaPage.PreencherCamposDaCategoriaGrade();
+            cadastroDeCategoriaPage.PreencherCamposDaCategoriaGrade(CadastroDeCategoriaModel.ElementoToggleGrade);
             cadastroDeCategoriaPage.Gravar();
 
             // Assert

@@ -12,7 +12,6 @@
         public static string BotaoGravar => "F5-Gravar";
         public static string BotaoPesquisar => "F9-Pesquisar";
         public static string ElementoPesquisar => "txtPequisa";
-
         public static string ElementoNomeGrupo => "txtNome";
         public static string ElementoMarkup => "txtMarkup";
         public static string ElementoTipoGrupo => "cbxTipoGrupoProduto";
@@ -21,6 +20,7 @@
         public static string ElementoToggleBalanca => "tglBalanca";
         public static string ElementoToggleMedicamento => "toggleSwitchMedicamento";
         public static string ElementoToggleImei => "registrosDoEstoqueToggleSwitch";
+        public static string ElementoToggleGrade => "gradeToggleSwitch";
         //public static string ElementoToggleAtivar => "tglAtivo";
     }
 }

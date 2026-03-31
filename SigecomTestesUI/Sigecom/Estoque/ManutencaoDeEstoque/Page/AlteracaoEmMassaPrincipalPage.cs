@@ -35,6 +35,8 @@ namespace SigecomTestesUI.Sigecom.Estoque.ManutencaoDeEstoque.Page
             DriverService.SelecionarItemComboBox(AlteracaoEmMassaModel.ElementoDoCampoDaSituacaoTribuitaria, 2);
             DriverService.ClicarNoToggleSwitchPeloId(AlteracaoEmMassaModel.ElementoDaToggleDaNaturezaCfop);
             DriverService.SelecionarItemComboBox(AlteracaoEmMassaModel.ElementoDoCampoDaNaturezaCfop, 2);
+            DriverService.ClicarNoToggleSwitchPeloId(AlteracaoEmMassaModel.ElementoDaToggleDoCBenef);
+            DriverService.DigitarNoCampoId(AlteracaoEmMassaModel.ElementoDoCampoDoCBenef, "SP099009");
             ClicarBotaoName(ManutencaoDeEstoqueModel.BotaoConfirmar);
             DriverService.TrocarJanela();
             ClicarBotaoName(ManutencaoDeEstoqueModel.BotaoSim);

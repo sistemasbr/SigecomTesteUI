@@ -21,6 +21,8 @@
         public static string ElementoDaToggleDaCstIpi => "cstDeIpiToggleSwitch";
         public static string ElementoDoCampoDaClassificacaoPis => "classificacaoDePisCofinsComboBoxEdit";
         public static string ElementoDaToggleDaClassificacaoPis => "classificacaoDePisConfinsToggleSwitch";
+        public static string ElementoDoCampoDoCBenef => "cBenefTextEdit";
+        public static string ElementoDaToggleDoCBenef => "cBenefToggleSwitch";
 
         //Valores
         public static string ElementoDeGroupButtomVenda => "Venda";

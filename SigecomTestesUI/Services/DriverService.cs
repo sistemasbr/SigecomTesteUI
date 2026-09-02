@@ -132,8 +132,15 @@ namespace SigecomTestesUI.Services
         public void ClicarNoToggleSwitchPeloId(string nomeDoCampo) =>
             ClicarBotaoId(nomeDoCampo);
 
-        public void ClicarBotaoName(string nomeBotao) => 
+        public void ClicarBotaoName(string nomeBotao) =>
             _driver.FindElementByName(nomeBotao).Click();
+
+        public void ConfirmarPerguntaComEnter(int segundosDeEspera = 1)
+        {
+            Thread.Sleep(TimeSpan.FromSeconds(segundosDeEspera));
+            _driver.SwitchTo().Window(_driver.WindowHandles[0]);
+            new Actions(_driver).SendKeys(Keys.Enter).Perform();
+        }
 
         public void ClicarBotaoId(string nomeBotao) => 
             _driver.FindElementByAccessibilityId(nomeBotao).Click();
@@ -379,6 +386,12 @@ namespace SigecomTestesUI.Services
         public void FocarCampoName(string nomeCampo)
         {
             var campo = EncontrarElementoName(nomeCampo);
+            campo.Click();
+        }
+
+        public void FocarCampoId(string nomeCampo)
+        {
+            var campo = EncontrarElementoId(nomeCampo);
             campo.Click();
         }
 

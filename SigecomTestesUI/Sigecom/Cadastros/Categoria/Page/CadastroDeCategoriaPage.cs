@@ -82,7 +82,7 @@ namespace SigecomTestesUI.Sigecom.Cadastros.Categoria.Page
         {
             DriverService.DigitarNoCampoId(CadastroDeCategoriaModel.ElementoNomeGrupo, _dadosDeCategoria["Grupo"]);
             DriverService.DigitarNoCampoId(CadastroDeCategoriaModel.ElementoMarkup, _dadosDeCategoria["Markup"]);
-            DriverService.SelecionarItemComboBox(CadastroDeCategoriaModel.ElementoTipoGrupo, 1);
+            DriverService.SelecionarItemComboBox(CadastroDeCategoriaModel.ElementoTipoGrupo, 2);
         }
 
         public bool Gravar()

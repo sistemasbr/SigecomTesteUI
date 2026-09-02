@@ -13,7 +13,7 @@ namespace SigecomTestesUI.Sigecom.Cadastros.Pessoas.Colaborador.CadastroDeColabo
     {
         private readonly Dictionary<string, string> _dadosDoCliente = new Dictionary<string, string>
         {
-            {"Nome", "PLUG4SALES ATIVIDADES DE INTERNET LTDA"},
+            {"Nome", "REPEDIU ATIVIDADES DE INTERNET LTDA"},
             {"Cnpj", "40120973000189"},
             {"NomeFantasia","PLUG4SALES"},
             {"Cep","15700-082"},

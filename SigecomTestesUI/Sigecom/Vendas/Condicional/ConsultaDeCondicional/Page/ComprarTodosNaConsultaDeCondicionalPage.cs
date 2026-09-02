@@ -30,6 +30,7 @@ namespace SigecomTestesUI.Sigecom.Vendas.Condicional.ConsultaDeCondicional.Page
             // Act
             EsperarAcaoEmSegundos(1);
             RealizarOCompraTodosNaConsulta();
+            EsperarAcaoEmSegundos(2);
             // Assert
             FecharTelaDeCondicionalComEsc();
         }
@@ -56,6 +57,8 @@ namespace SigecomTestesUI.Sigecom.Vendas.Condicional.ConsultaDeCondicional.Page
         private void RealizarOCompraTodosNaConsulta()
         {
             ClicarBotaoName(ConsultaDeCondicionalModel.BotaoDeComprarTodosCondicional);
+            DriverService.FocarCampoId(CondicionalModel.GridDeFormaDePagamento);
+            DriverService.RealizarAcaoDaTeclaDeAtalhoNaTelaId(CondicionalModel.GridDeFormaDePagamento, "Esc");
             DriverService.RealizarSelecaoDaFormaDePagamento(CondicionalModel.GridDeFormaDePagamento, 1);
         }
 
